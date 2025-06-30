@@ -120,6 +120,11 @@ def centro_de_peticiones():
             respuesta_pc(f"Reproduciendo {cancion}.")
             pywhatkit.playonyt(cancion)
             continue
+        elif f"{nombre_asistente} abre" in peticion:
+            sitio_web = peticion.replace(f"{nombre_asistente} abre", "").strip()
+            respuesta_pc(f"Abriendo {sitio_web}.")
+            webbrowser.open(sitio_web)
+            continue
         elif "salir" in peticion or "adiós" in peticion or "eso es todo" in peticion:
             respuesta_pc("Hasta luego, que tengas un buen día.")
             break
