@@ -1,0 +1,14 @@
+Pasos para el desarrollo de un proyecto en python
+
+1.- Creación del entorno virtual
+python -m venv venv
+
+2.- Activar el entorno
+venv\Scripts\activate
+
+3.- Importar librerias
+pip install SpeechRecognition pyaudio pyttsx3 pyjokes pywhatkit webbrowser pygame playsound
+
+pip freeze > requirements.txt ## guarda las dependencias en un fichero
+
+pip install -r requirements.txt ## para recuperar las dependencias
